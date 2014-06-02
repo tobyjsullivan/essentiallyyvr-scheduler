@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Build the .JAR for the program
+pushd ..
+sbt assembly
+popd
+
+# Build the Docker image for distribution
+docker build -t tobyjsullivan/essentiallyyvr-scheduler .
+
+# Push the Docker image to public repo
+docker push tobyjsullivan/essentiallyyvr-scheduler
+
