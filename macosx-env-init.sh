@@ -10,3 +10,5 @@ boot2docker up
 
 export DOCKER_HOST=tcp://localhost:4243
 
+set +x
+
