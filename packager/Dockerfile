@@ -14,5 +14,5 @@ MAINTAINER Toby Sullivan
 RUN apt-get update && apt-get install -y openjdk-7-jre
 
 # Add the program to /opt
-ADD ../target/scala-2.10/essentiallyyvr-scheduler.jar /opt/
+ADD resources/essentiallyyvr-scheduler.jar /opt/
 

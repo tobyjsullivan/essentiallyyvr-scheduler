@@ -5,6 +5,11 @@ pushd ..
 sbt assembly
 popd
 
+# Copy the built jar to the Docker context
+rm -Rf resources
+mkdir -p resources
+cp ../target/scala-2.10/essentiallyyvr-scheduler.jar resources/
+
 # Build the Docker image for distribution
 docker build -t tobyjsullivan/essentiallyyvr-scheduler .
 

@@ -2,4 +2,5 @@
 /.idea_modules
 target
 production.key
+/packager/resources
 
